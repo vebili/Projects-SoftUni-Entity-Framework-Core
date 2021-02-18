@@ -8,6 +8,7 @@ namespace CSharpDbDemo
     {
         static void Main(string[] args)
         {
+            string connectionString = "Server=";
             var connection = new SqlConnection("");
             connection.Open();
             var query = new SqlCommand("SELECT COUNT(*) FROM Employees");
