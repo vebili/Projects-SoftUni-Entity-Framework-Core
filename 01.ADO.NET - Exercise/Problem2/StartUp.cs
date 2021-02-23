@@ -27,7 +27,6 @@
                             {
                                 string name = (string)reader[0];
                                 int age = (int)reader[1];
-
                                 Console.WriteLine($"{name} - {age}");
                             }
                         }
