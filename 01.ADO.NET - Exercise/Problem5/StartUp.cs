@@ -45,7 +45,6 @@
                         }
                     }
                 }
-
                 Console.WriteLine("[" + string.Join(", ", towns) + "]");
             }
         }

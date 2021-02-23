@@ -13,9 +13,7 @@
             using (SqlConnection connection = new SqlConnection(ConnectionStringMinionsDB))
             {
                 connection.Open();
-
                 string selectVillainName = @"SELECT Name FROM Villains WHERE Id = @Id";
-
                 using (SqlCommand command = new SqlCommand(selectVillainName, connection))
                 {
                     command.Parameters.AddWithValue("@Id", villianId);
@@ -27,10 +25,8 @@
                         Console.WriteLine($"No villain with ID {villianId} exists in the database.");
                         return;
                     }
-
                     Console.WriteLine($"Villain: {villianName}");
                 }
-
                 string selectMinions = @"SELECT ROW_NUMBER() OVER (ORDER BY m.Name) as RowNum,
                                                     m.Name, 
                                                     m.Age
