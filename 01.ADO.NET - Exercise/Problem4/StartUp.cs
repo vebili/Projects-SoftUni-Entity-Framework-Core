@@ -10,17 +10,13 @@
         {
             string[] minionsData = Console.ReadLine().Split();
             string[] villainData = Console.ReadLine().Split();
-
             string minionName = minionsData[1];
             int age = int.Parse(minionsData[2]);
             string townName = minionsData[3];
-
             string villainName = villainData[1];
-
             using (SqlConnection connection = new SqlConnection(ConnectionStringMinionsDB))
             {
                 connection.Open();
-
                 SqlCommand command = connection.CreateCommand();
                 SqlTransaction transaction = connection.BeginTransaction();
                 try
@@ -86,7 +82,6 @@
 
             Console.WriteLine($"Successfully added {minionName} to be minion of {villainName}.");
         }
-
         private static int GetMinionByName(SqlConnection connection, string minionName, SqlTransaction transaction)
         {
             string selectMinionId = @"SELECT Id FROM Minions WHERE Name = @Name";
@@ -97,7 +92,6 @@
                 return (int)command.ExecuteScalar();
             }
         }
-
         private static void AddVillain(SqlConnection connection, string villainName, SqlTransaction transaction)
         {
             string insertVillain = @"INSERT INTO Villains (Name, EvilnessFactorId)  VALUES (@villainName, 4)";
@@ -108,10 +102,8 @@
 
                 command.ExecuteNonQuery();
             }
-
             Console.WriteLine($"Villain {villainName} was added to the database.");
         }
-
         private static int? GetVillainByName(SqlConnection connection, string villainName, SqlTransaction transaction)
         {
             string selectVillainId = @"SELECT Id FROM Villains WHERE Name = @Name";
@@ -122,7 +114,6 @@
                 return (int?)command.ExecuteScalar();
             }
         }
-
         private static void AddMinion(SqlConnection connection, string minionName, int age, int? townId, SqlTransaction transaction)
         {
             string insertMinion = @"INSERT INTO Minions (Name, Age, TownId) VALUES (@name, @age, @townId)";
@@ -136,7 +127,6 @@
                 command.ExecuteNonQuery();
             }
         }
-
         private static int? GetTownByName(SqlConnection connection, string townName, SqlTransaction transaction)
         {
             string selectTownId = @"SELECT Id FROM Towns WHERE Name = @townName";
@@ -148,7 +138,6 @@
                 return (int?)command.ExecuteScalar();
             }
         }
-
         private static void AddTown(SqlConnection connection, string townName, SqlTransaction transaction)
         {
             string insertTown = @"INSERT INTO Towns (Name) VALUES (@townName)";
@@ -158,7 +147,6 @@
 
                 command.ExecuteNonQuery();
             }
-
             Console.WriteLine($"Town {townName} was added to the database.");
         }
     }

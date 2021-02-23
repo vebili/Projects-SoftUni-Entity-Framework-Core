@@ -17,7 +17,7 @@
                 using (SqlCommand command = new SqlCommand(uspGetOlderProc, connection))
                 {
                     command.Parameters.AddWithValue("@id", id);
-                    command.ExecuteNonQuery();
+                    //command.ExecuteNonQuery();
                 }
                 using (SqlCommand command = new SqlCommand(selectNameAndAge, connection))
                 {
@@ -28,7 +28,6 @@
                         {
                             string name = (string)reader[0];
                             int age = (int)reader[1];
-
                             Console.WriteLine($"{name} – {age} years old");
                         }
                     }

@@ -11,7 +11,6 @@
         {
             string selectSQL = @"SELECT Name FROM Minions";
             List<string> names = new List<string>();
-
             using (SqlConnection connection = new SqlConnection(ConnectionStringMinionsDB))
             {
                 connection.Open();

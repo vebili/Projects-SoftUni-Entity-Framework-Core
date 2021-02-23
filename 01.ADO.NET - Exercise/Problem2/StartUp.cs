@@ -17,7 +17,6 @@
                                         GROUP BY v.Id, v.Name 
                                         HAVING COUNT(mv.VillainId) > 3 
                                         ORDER BY COUNT(mv.VillainId)";
-
                 using (SqlCommand command = new SqlCommand(selectString, connection))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())

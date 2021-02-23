@@ -47,8 +47,7 @@
         }
         private static void ExecuteNonQuery(string commandText, SqlConnection connection, string commandType)
         {
-            SqlCommand command = new SqlCommand(commandText, connection);
-            
+            SqlCommand command = new SqlCommand(commandText, connection);            
                 try
                 {
                     command.ExecuteNonQuery();

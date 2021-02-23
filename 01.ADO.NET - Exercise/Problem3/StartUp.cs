@@ -9,7 +9,6 @@
         public static void Main(string[] args)
         {
             int villianId = int.Parse(Console.ReadLine());
-
             using (SqlConnection connection = new SqlConnection(ConnectionStringMinionsDB))
             {
                 connection.Open();
@@ -34,7 +33,6 @@
                                             JOIN Minions As m ON mv.MinionId = m.Id
                                             WHERE mv.VillainId = @Id
                                             ORDER BY m.Name";
-
                 using (SqlCommand command = new SqlCommand(selectMinions, connection))
                 {
                     command.Parameters.AddWithValue("@Id", villianId);
@@ -44,7 +42,6 @@
                         {
                             Console.WriteLine("(no minions)");
                         }
-
                         while (reader.Read())
                         {
                             long rowNum = (long)reader[0];

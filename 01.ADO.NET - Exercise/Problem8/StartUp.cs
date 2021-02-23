@@ -14,9 +14,7 @@
                                      SET Name = UPPER(LEFT(Name, 1)) + SUBSTRING(Name, 2, LEN(Name)), Age += 1
                                      WHERE Id = @Id";
             string selectName = @"SELECT Name, Age FROM Minions";
-
             int[] ids = Console.ReadLine().Split().Select(int.Parse).ToArray();
-
             using (SqlConnection connection = new SqlConnection(ConnectionStringMinionsDB))
             {
                 connection.Open();
