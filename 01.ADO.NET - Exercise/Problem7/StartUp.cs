@@ -27,18 +27,15 @@
                     }
                 }
             }
-
             for (int i = 0; i < names.Count/2; i++)
             {
                 Console.WriteLine(names[i]);
                 Console.WriteLine(names[names.Count - 1 - i]);
             }
-
             if (names.Count % 2 != 0)
             {
                 Console.WriteLine(names[names.Count / 2]);
             }
-
         }
     }
 }

@@ -20,7 +20,6 @@
             using (SqlConnection connection = new SqlConnection(ConnectionStringMinionsDB))
             {
                 connection.Open();
-
                 for (int i = 0; i < ids.Length; i++)
                 {
                     using (SqlCommand command = new SqlCommand(updateMinions, connection))
@@ -29,7 +28,6 @@
                         command.ExecuteNonQuery();
                     }
                 }
-
                 using (SqlCommand command = new SqlCommand(selectName, connection))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -44,7 +42,6 @@
                     }
                 }
             }
-
         }
     }
 }
