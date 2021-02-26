@@ -4,7 +4,6 @@
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Runtime.CompilerServices;
 
     public class DbSet<TEntity> : ICollection<TEntity>
         where TEntity :class, new()
@@ -13,8 +12,7 @@
         {
             this.Entities = entities.ToList();
             this.ChangeTracker = new ChangeTracker<TEntity>(entities);
-        }
-		
+        }		
         internal IList<TEntity> Entities { get; set; }
         internal ChangeTracker<TEntity> ChangeTracker { get; set; }
         public int Count => this.Entities.Count;
@@ -40,7 +38,6 @@
                 this.Remove(current);
             }
         }
-
         public bool Contains(TEntity item) => this.Entities.Contains(item);
 
         public void CopyTo(TEntity[] array, int arrayIndex) => this.Entities.CopyTo(array, arrayIndex);

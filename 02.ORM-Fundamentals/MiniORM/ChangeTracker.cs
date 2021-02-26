@@ -21,7 +21,6 @@
 
             this.allEntities = CloneEntities(entities);
         }
-
         public IReadOnlyCollection<T> Added => this.added.AsReadOnly();
         public IReadOnlyCollection<T> Removed => this.removed.AsReadOnly();
         public IReadOnlyCollection<T> AllEntities => this.allEntities.AsReadOnly();
@@ -54,7 +53,6 @@
 
             return modifiedEntities;
         }
-
         private bool IsModified(T proxyEntity, T entity)
         {
             var monitoredProperties = typeof(T).GetProperties()
@@ -69,7 +67,6 @@
 
             return isModified;
         }
-
         private static IEnumerable<object> GetPrimaryKeyValues(PropertyInfo[] primaryKeys, T entity)
         {
             return primaryKeys.Select(pk => pk.GetValue(entity));
@@ -95,7 +92,6 @@
 
                 clonedEntities.Add(clonedEntity);
             }
-
             return clonedEntities;
         }
     }
