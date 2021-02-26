@@ -1,5 +1,5 @@
 # Projects-SoftUni-Entity-Framework-Core
-![Visitors](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fvebili)<br/>
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fvebili%2FProjects-SoftUni-Entity-Framework-Core)<br/>
 Projects-SoftUni-Entity-Framework-Core<br>
 01.ADO.NET<br>
 02.ORM-Fundamentals<br>
