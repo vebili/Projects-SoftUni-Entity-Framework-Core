@@ -9,3 +9,4 @@ Projects-SoftUni-Entity-Framework-Core<br>
 06.Advanced Querying<br>
 07.C# Auto Mapping Objects<br>
 <br>
+<br>
