@@ -6,6 +6,6 @@ Projects-SoftUni-Entity-Framework-Core<br>
 03.Entity-Framework-Introduction<br>
 04.Entity-Relations<br>
 05.LINQ<br>
-<br>
+06.Advanced Querying<br>
 <br>
 <br>
