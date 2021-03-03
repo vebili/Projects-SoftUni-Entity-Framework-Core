@@ -5,7 +5,7 @@ Projects-SoftUni-Entity-Framework-Core<br>
 02.ORM-Fundamentals<br>
 03.Entity-Framework-Introduction<br>
 04.Entity-Relations<br>
-<br>
+05.LINQ<br>
 <br>
 <br>
 <br>
