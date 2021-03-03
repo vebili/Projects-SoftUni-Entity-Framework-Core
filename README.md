@@ -8,5 +8,5 @@ Projects-SoftUni-Entity-Framework-Core<br>
 05.LINQ<br>
 06.Advanced Querying<br>
 07.C# Auto Mapping Objects<br>
-<br>
+08.JSON Processing<br>
 <br>
