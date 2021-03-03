@@ -7,5 +7,5 @@ Projects-SoftUni-Entity-Framework-Core<br>
 04.Entity-Relations<br>
 05.LINQ<br>
 06.Advanced Querying<br>
-<br>
+07.C# Auto Mapping Objects<br>
 <br>
