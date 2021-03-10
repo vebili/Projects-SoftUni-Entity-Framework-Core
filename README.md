@@ -5,7 +5,9 @@ Projects-SoftUni-Entity-Framework-Core<br>
 02.ORM-Fundamentals<br>
 03.Entity-Framework-Introduction<br>
 04.Entity-Relations<br>
-<br>
-<br>
-<br>
-<br>
+05.LINQ<br>
+06.Advanced Querying<br>
+07.C# Auto Mapping Objects<br>
+08.JSON Processing<br>
+09.XML Processing<br>
+<br/>
