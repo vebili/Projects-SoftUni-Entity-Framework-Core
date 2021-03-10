@@ -8,9 +8,7 @@ namespace CSharpDbDemo
     {
         static void Main(string[] args)
         {
-            //.
-            //localhost
-            //127.0.0.1
+            //.            //localhost            //127.0.0.1
             //name of the PC
             //Integrated Security=true;
             //string connectionString = "Server=.;Integrated Security=true;Database=SoftUni";
