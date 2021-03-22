@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Core", "FastFood\FastFood.Core\FastFood.Core.csproj", "{2D855489-E10A-4F1A-9DE6-DD807F76C747}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Data", "FastFood\FastFood.Data\FastFood.Data.csproj", "{D028BEE0-DDE5-49F2-BBEC-FED79C632CB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Models", "FastFood\FastFood.Models\FastFood.Models.csproj", "{4866DC93-4E46-4421-9F57-9F00A9630F76}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D855489-E10A-4F1A-9DE6-DD807F76C747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D855489-E10A-4F1A-9DE6-DD807F76C747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D855489-E10A-4F1A-9DE6-DD807F76C747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D855489-E10A-4F1A-9DE6-DD807F76C747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D028BEE0-DDE5-49F2-BBEC-FED79C632CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D028BEE0-DDE5-49F2-BBEC-FED79C632CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D028BEE0-DDE5-49F2-BBEC-FED79C632CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D028BEE0-DDE5-49F2-BBEC-FED79C632CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4866DC93-4E46-4421-9F57-9F00A9630F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4866DC93-4E46-4421-9F57-9F00A9630F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4866DC93-4E46-4421-9F57-9F00A9630F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4866DC93-4E46-4421-9F57-9F00A9630F76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
