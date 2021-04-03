@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Comp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prototype.csproj", "{05299F12-B048-4B7A-A21D-764E6AB4608C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplatePattern", "TemplatePattern\TemplatePattern.csproj", "{06018398-D345-45D4-9DDB-8C7A8EB6BDBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{05299F12-B048-4B7A-A21D-764E6AB4608C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05299F12-B048-4B7A-A21D-764E6AB4608C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05299F12-B048-4B7A-A21D-764E6AB4608C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06018398-D345-45D4-9DDB-8C7A8EB6BDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06018398-D345-45D4-9DDB-8C7A8EB6BDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06018398-D345-45D4-9DDB-8C7A8EB6BDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06018398-D345-45D4-9DDB-8C7A8EB6BDBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
