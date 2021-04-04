@@ -1,6 +1,6 @@
 ﻿namespace TeisterMask
 {
-    using System;							   
+    using System;
     using System.IO;
     using System.Globalization;
 
