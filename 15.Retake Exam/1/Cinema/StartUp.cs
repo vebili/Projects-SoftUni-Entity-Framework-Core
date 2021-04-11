@@ -18,19 +18,14 @@
 
             var projectDir = GetProjectDirectory();
 
-            //ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
+            ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
 
-            ExportEntities(context, projectDir + @"Datasets/", projectDir + @"ExportResults/");
+            ExportEntities(context, projectDir + @"ExportResults/");
 
             using (var transaction = context.Database.BeginTransaction())
             {
                 transaction.Rollback();
             }
-        }
-
-        private static void ExportEntities(CinemaContext context, string v1, string v2)
-        {
-            throw new NotImplementedException();
         }
 
         private static void ImportEntities(CinemaContext context, string baseDir, string exportDir)
