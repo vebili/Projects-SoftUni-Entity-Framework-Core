@@ -19,10 +19,6 @@ namespace Cinema.Data.Models
         public int MovieId { get; set; }
         public virtual Movie Movie { get; set; }
 
-        [Required, ForeignKey(nameof(Hall))]
-        public int HallId { get; set; }
-        public virtual Hall Hall { get; set; }
-
         [Required]
         public DateTime DateTime { get; set; }
         public virtual ICollection<Ticket> Tickets { get; set; }
