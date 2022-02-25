@@ -17,7 +17,6 @@ namespace MongoDriver
 
             //PrintAllStudents(collection);
 
-
         }
 
         private static void PrintAllStudents(IMongoCollection<BsonDocument> collection)
