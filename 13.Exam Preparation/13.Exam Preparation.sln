@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaporStore", "Exam 01.09.2018\VaporStore\VaporStore.csproj", "{6208D951-6C59-4709-BE5B-F94B385AD31E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetClinic", "Exam 05.01.2018\PetClinic\PetClinic.csproj", "{D8FC2286-9BCE-44A9-AC54-3F3A80A941B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6208D951-6C59-4709-BE5B-F94B385AD31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6208D951-6C59-4709-BE5B-F94B385AD31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6208D951-6C59-4709-BE5B-F94B385AD31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FC2286-9BCE-44A9-AC54-3F3A80A941B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FC2286-9BCE-44A9-AC54-3F3A80A941B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FC2286-9BCE-44A9-AC54-3F3A80A941B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FC2286-9BCE-44A9-AC54-3F3A80A941B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
