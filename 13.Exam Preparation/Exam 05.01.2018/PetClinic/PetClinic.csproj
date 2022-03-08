@@ -6,16 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!--<Compile Remove="App\Results\**" />
-    <EmbeddedResource Remove="App\Results\**" />
-    <None Remove="App\Results\**" />-->
-	<Folder Include="App\Results\**" />
+    <Folder Include="App\Results\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="AutoMapper" Version="6.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
 </Project>

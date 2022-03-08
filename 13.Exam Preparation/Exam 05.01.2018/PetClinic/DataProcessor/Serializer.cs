@@ -1,77 +1,76 @@
 ﻿namespace PetClinic.DataProcessor
 {
     using System;
-    using System.Collections.Generic;
     using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Text;
     using System.Xml;
     using System.Xml.Serialization;
-    using Dtos.ExportDtos;
     using Newtonsoft.Json;
     using PetClinic.Data;
-    using Formatting = Newtonsoft.Json.Formatting;
+    using PetClinic.DataProcessor.Dto.Export;
 
     public class Serializer
     {
         public static string ExportAnimalsByOwnerPhoneNumber(PetClinicContext context, string phoneNumber)
         {
-            var animals = context
-                .Animals
-                .Where(a => a.Passport.OwnerPhoneNumber == phoneNumber)
-                .Select(a => new AnimalExportDto
+            var animals = context.Animals
+                .Where(a => a.Passport.OwnerPhoneNumber.Equals(phoneNumber, StringComparison.OrdinalIgnoreCase))
+                .Select(a => new
                 {
                     OwnerName = a.Passport.OwnerName,
                     AnimalName = a.Name,
                     Age = a.Age,
-                    SerialNumber = a.PassportSerialNumber,
+                    SerialNumber = a.Passport.SerialNumber,
                     RegisteredOn = a.Passport.RegistrationDate.ToString("dd-MM-yyyy", CultureInfo.InvariantCulture)
                 })
                 .OrderBy(a => a.Age)
                 .ThenBy(a => a.SerialNumber)
-                .ToList();
+                .ToArray();
 
-            var animalsJson = JsonConvert.SerializeObject(animals, Formatting.Indented);
-
-            return animalsJson;
+            var jsonString = JsonConvert.SerializeObject(animals, Newtonsoft.Json.Formatting.Indented);
+            return jsonString;
         }
 
         public static string ExportAllProcedures(PetClinicContext context)
         {
-            var procedures = context
-                .Procedures
+            var procedures = context.Procedures
+                .Select(p => new 
+                {
+                    Passport = p.Animal.Passport.SerialNumber,
+                    OwnerNumber = p.Animal.Passport.OwnerPhoneNumber,
+                    DateTime = p.DateTime,
+                    AnimalAids = p.ProcedureAnimalAids
+                        .Select(paa => paa.AnimalAid)
+                        .Select(aa => new ProcedureExportAnimalAidDto
+                        {
+                            Name = aa.Name, 
+                            Price = aa.Price
+                        })
+                        .ToArray(),
+                    TotalPrice = p.Cost
+                })
                 .OrderBy(p => p.DateTime)
-                .ThenBy(p => p.Animal.PassportSerialNumber)
+                .ThenBy(p => p.Passport)
                 .Select(p => new ProcedureExportDto
                 {
-                    Passport = p.Animal.PassportSerialNumber,
-                    OwnerNumber = p.Animal.Passport.OwnerPhoneNumber,
-                    DateTime = p.DateTime.ToString("dd-MM-yyyy", CultureInfo.InvariantCulture),
-                    AnimalAids = p.ProcedureAnimalAids
-                        .Select(aa => new AnimalAidExportDto
-                        {
-                            Name = aa.AnimalAid.Name,
-                            Price = aa.AnimalAid.Price
-                        })
-                        .ToList(),
-                    TotalPrice = p.ProcedureAnimalAids.Sum(aa => aa.AnimalAid.Price)
+                    Passport = p.Passport, 
+                    OwnerNumber = p.OwnerNumber, 
+                    DateTime = p.DateTime.ToString("dd-MM-yyyy", CultureInfo.InvariantCulture), 
+                    AnimalAids = p.AnimalAids, 
+                    TotalPrice = p.TotalPrice
                 })
-                .ToList();
+                .ToArray();
+            // toto
 
-            var attr = new XmlRootAttribute("Procedures");
-            var serializer = new XmlSerializer(typeof(List<ProcedureExportDto>), attr);
+            var sb = new StringBuilder();
 
-            StringBuilder sb = new StringBuilder();
+            var serializer = new XmlSerializer(typeof(ProcedureExportDto[]), new XmlRootAttribute("Procedures"));
+            serializer.Serialize(new StringWriter(sb), procedures, new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty }));
 
-            var namespaces = new XmlSerializerNamespaces(new[]
-            {
-                XmlQualifiedName.Empty
-            });
-
-            serializer.Serialize(new StringWriter(sb), procedures, namespaces);
-
-            return sb.ToString().TrimEnd();
+            var result = sb.ToString();
+            return result;
         }
     }
 }
