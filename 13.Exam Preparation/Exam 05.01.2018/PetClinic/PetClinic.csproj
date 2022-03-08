@@ -6,9 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="App\Results\**" />
+    <!--<Compile Remove="App\Results\**" />
     <EmbeddedResource Remove="App\Results\**" />
-    <None Remove="App\Results\**" />
+    <None Remove="App\Results\**" />-->
+	<Folder Include="App\Results\**" />
   </ItemGroup>
 
   <ItemGroup>
