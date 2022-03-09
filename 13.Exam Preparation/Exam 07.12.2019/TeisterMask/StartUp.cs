@@ -21,10 +21,10 @@
 
             ExportEntities(context, projectDir + @"ExportResults/");
 
-            using (var transaction = context.Database.BeginTransaction())
-            {
+            using var transaction = context.Database.BeginTransaction();
+            
                 transaction.Rollback();
-            }
+            
         }
 
         private static void ImportEntities(TeisterMaskContext context,string baseDir, string exportDir)
