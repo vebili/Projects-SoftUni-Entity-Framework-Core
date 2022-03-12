@@ -55,7 +55,7 @@ namespace Instagraph.App
 
         private static void ExportData()
         {
-            using (var context = new InstagraphContext())
+            using var context = new InstagraphContext();
             {
                 var baseDir = "../../../";
 
