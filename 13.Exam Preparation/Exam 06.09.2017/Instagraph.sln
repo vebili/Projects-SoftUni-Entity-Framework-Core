@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.App", "Instagraph.App\Instagraph.App.csproj", "{82E75049-4903-4A76-BAEC-0098848845E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.App", "Instagraph\Instagraph.App\Instagraph.App.csproj", "{82E75049-4903-4A76-BAEC-0098848845E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.Data", "Instagraph.Data\Instagraph.Data.csproj", "{F04C1781-CC7B-4FFC-BAD7-DE5650E04633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.Data", "Instagraph\Instagraph.Data\Instagraph.Data.csproj", "{F04C1781-CC7B-4FFC-BAD7-DE5650E04633}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.DataProcessor", "Instagraph.DataProcessor\Instagraph.DataProcessor.csproj", "{E8D03C14-5B50-4159-B3BF-3D52564513EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.DataProcessor", "Instagraph\Instagraph.DataProcessor\Instagraph.DataProcessor.csproj", "{E8D03C14-5B50-4159-B3BF-3D52564513EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.Models", "Instagraph.Models\Instagraph.Models.csproj", "{AA2A5CD9-AF89-4FE7-99A7-C1D8276D0052}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagraph.Models", "Instagraph\Instagraph.Models\Instagraph.Models.csproj", "{AA2A5CD9-AF89-4FE7-99A7-C1D8276D0052}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

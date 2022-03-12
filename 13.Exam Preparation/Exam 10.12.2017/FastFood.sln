@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.App", "FastFood.App\FastFood.App.csproj", "{B9345923-2C8B-46B8-B734-889E9289438D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.App", "FastFood\FastFood.App\FastFood.App.csproj", "{B9345923-2C8B-46B8-B734-889E9289438D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Data", "FastFood.Data\FastFood.Data.csproj", "{106C0711-4398-4ED0-88E4-01C86C07A30A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Data", "FastFood\FastFood.Data\FastFood.Data.csproj", "{106C0711-4398-4ED0-88E4-01C86C07A30A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Models", "FastFood.Models\FastFood.Models.csproj", "{0E404A2B-3D56-42A8-B7B5-B6F6F59AC65A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Models", "FastFood\FastFood.Models\FastFood.Models.csproj", "{0E404A2B-3D56-42A8-B7B5-B6F6F59AC65A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.DataProcessor", "FastFood.DataProcessor\FastFood.DataProcessor.csproj", "{3245DD5A-F585-4896-BF30-AC8B864F15B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.DataProcessor", "FastFood\FastFood.DataProcessor\FastFood.DataProcessor.csproj", "{3245DD5A-F585-4896-BF30-AC8B864F15B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
