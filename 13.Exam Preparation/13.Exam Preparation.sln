@@ -11,14 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema", "Exam 07.04.2019\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeisterMask", "Exam 07.12.2019\TeisterMask\TeisterMask.csproj", "{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.App", "Exam 10.12.2017\FastFood\FastFood.App\FastFood.App.csproj", "{662958EA-3D8E-4F1F-BB34-DD8F84EE08F9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Data", "Exam 10.12.2017\FastFood\FastFood.Data\FastFood.Data.csproj", "{50736E53-AF37-44F1-AA51-669E6B28B072}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.DataProcessor", "Exam 10.12.2017\FastFood\FastFood.DataProcessor\FastFood.DataProcessor.csproj", "{B682F392-B190-4FFC-9028-55F698D6AFEF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFood.Models", "Exam 10.12.2017\FastFood\FastFood.Models\FastFood.Models.csproj", "{2EAB4F41-8D1F-461F-BC1E-A5DD18E4F7B5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,22 +33,6 @@ Global
 		{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{662958EA-3D8E-4F1F-BB34-DD8F84EE08F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{662958EA-3D8E-4F1F-BB34-DD8F84EE08F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{662958EA-3D8E-4F1F-BB34-DD8F84EE08F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{662958EA-3D8E-4F1F-BB34-DD8F84EE08F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50736E53-AF37-44F1-AA51-669E6B28B072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50736E53-AF37-44F1-AA51-669E6B28B072}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50736E53-AF37-44F1-AA51-669E6B28B072}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50736E53-AF37-44F1-AA51-669E6B28B072}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B682F392-B190-4FFC-9028-55F698D6AFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B682F392-B190-4FFC-9028-55F698D6AFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B682F392-B190-4FFC-9028-55F698D6AFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B682F392-B190-4FFC-9028-55F698D6AFEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2EAB4F41-8D1F-461F-BC1E-A5DD18E4F7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EAB4F41-8D1F-461F-BC1E-A5DD18E4F7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EAB4F41-8D1F-461F-BC1E-A5DD18E4F7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EAB4F41-8D1F-461F-BC1E-A5DD18E4F7B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
