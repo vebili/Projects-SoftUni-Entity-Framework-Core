@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stations.Models", "Stations
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stations.DataProcessor", "Stations.DataProcessor\Stations.DataProcessor.csproj", "{3245DD5A-F585-4896-BF30-AC8B864F15B3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicHub", "..\Exam 18.04.2019\MusicHub\MusicHub.csproj", "{ED3C91B8-3776-40CE-9D29-C654FA447735}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3245DD5A-F585-4896-BF30-AC8B864F15B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3245DD5A-F585-4896-BF30-AC8B864F15B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3245DD5A-F585-4896-BF30-AC8B864F15B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3C91B8-3776-40CE-9D29-C654FA447735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3C91B8-3776-40CE-9D29-C654FA447735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3C91B8-3776-40CE-9D29-C654FA447735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3C91B8-3776-40CE-9D29-C654FA447735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
