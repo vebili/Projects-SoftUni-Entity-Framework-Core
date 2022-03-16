@@ -6,7 +6,7 @@
     using Data;
     using Microsoft.EntityFrameworkCore.Internal;
     using MusicHub.Data.Models;
-    using MusicHub.DataProcessor.ExportDtos;
+    using MusicHub.DataProcessor.ExportDto;
     using MusicHub.XML;
     using Newtonsoft.Json;
 

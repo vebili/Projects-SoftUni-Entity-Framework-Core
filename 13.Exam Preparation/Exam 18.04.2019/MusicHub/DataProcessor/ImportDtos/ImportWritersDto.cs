@@ -1,15 +1,15 @@
 ﻿namespace MusicHub.DataProcessor.ImportDtos
 {
     using System.ComponentModel.DataAnnotations;
-    using Newtonsoft.Json;
 
-    public class WriterDto
+    public class ImportWritersDto
     {
         [Required]
         [MinLength(3), MaxLength(20)]
         public string Name { get; set; }
 
-        [RegularExpression("[A-Z][a-z]+ [A-Z][a-z]+")]
+        [RegularExpression(@"^[A-Z]{1}[a-z]+[ ][A-Z]{1}[a-z]+$")]
         public string Pseudonym { get; set; }
+
     }
 }

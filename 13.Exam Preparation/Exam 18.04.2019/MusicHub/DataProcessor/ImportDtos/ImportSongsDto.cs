@@ -1,34 +1,42 @@
 ﻿namespace MusicHub.DataProcessor.ImportDtos
 {
-    using System;
     using System.ComponentModel.DataAnnotations;
     using System.Xml.Serialization;
 
     [XmlType("Song")]
-    public class SongDto
+    public class ImportSongsDto
     {
         [Required]
-        [MaxLength(20), MinLength(3)]
-        [XmlElement(ElementName="Name")]
+        [MinLength(3), MaxLength(20)]
+        [XmlElement("Name")]
         public string Name { get; set; }
 
-        [XmlElement(ElementName="Duration")]
+        [XmlElement("Duration")]
         public string Duration { get; set; }
 
-        [XmlElement(ElementName="CreatedOn")]
+        [XmlElement("CreatedOn")]
         public string CreatedOn { get; set; }
 
-        [XmlElement(ElementName="Genre")]
+        [XmlElement("Genre")]
         public string Genre { get; set; }
 
-        [XmlElement(ElementName="AlbumId")]
+        [XmlElement("AlbumId")]
         public int? AlbumId { get; set; }
 
-        [XmlElement(ElementName="WriterId")]
+        [XmlElement("WriterId")]
         public int WriterId { get; set; }
 
         [Range(typeof(decimal), "0", "79228162514264337593543950335")]
-        [XmlElement(ElementName="Price")]
+        [XmlElement("Price")]
         public decimal Price { get; set; }
     }
 }
+//<Song>
+//    <Name>What Goes Around</Name>
+//    <Duration>00:03:23</Duration>
+//    <CreatedOn>21/12/2018</CreatedOn>
+//    <Genre>Blues</Genre>
+//    <AlbumId>2</AlbumId>
+//    <WriterId>2</WriterId>
+//    <Price>12</Price>
+//  </Song>

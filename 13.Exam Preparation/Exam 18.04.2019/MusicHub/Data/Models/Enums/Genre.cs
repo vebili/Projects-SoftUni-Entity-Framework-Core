@@ -1,11 +1,13 @@
-﻿namespace MusicHub.Data.Models.Enums
+﻿using System;
+namespace MusicHub.Data.Models.Enums
 {
     public enum Genre
     {
-        Blues, 
-        Rap, 
-        PopMusic, 
-        Rock, 
-        Jazz
+
+        Blues = 1,
+        Rap = 2,
+        PopMusic = 3,
+        Rock = 4,
+        Jazz = 5,
     }
 }

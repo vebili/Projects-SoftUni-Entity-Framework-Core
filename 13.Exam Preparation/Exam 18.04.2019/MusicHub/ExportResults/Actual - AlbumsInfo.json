@@ -6,16 +6,16 @@
     "Songs": [
       {
         "SongName": "Numb",
-        "Price": "13.99",
+        "Price": "13,99",
         "Writer": "Kara-lynn Sharpous"
       },
       {
         "SongName": "Ibuprofen",
-        "Price": "26.50",
+        "Price": "26,50",
         "Writer": "Stanford Daykin"
       }
     ],
-    "AlbumPrice": "40.49"
+    "AlbumPrice": "40,49"
   },
   {
     "AlbumName": "Flower shower",
@@ -24,16 +24,16 @@
     "Songs": [
       {
         "SongName": "It is my life",
-        "Price": "13.00",
+        "Price": "13,00",
         "Writer": "Stanford Daykin"
       },
       {
         "SongName": "Cough Relief",
-        "Price": "25.04",
+        "Price": "25,04",
         "Writer": "Jessie Townby"
       }
     ],
-    "AlbumPrice": "38.04"
+    "AlbumPrice": "38,04"
   },
   {
     "AlbumName": "Two to tango",
@@ -42,16 +42,16 @@
     "Songs": [
       {
         "SongName": "Wide Awake",
-        "Price": "8.99",
+        "Price": "8,99",
         "Writer": "Marlee Olivet"
       },
       {
         "SongName": "Levothyroxine Sodium",
-        "Price": "16.42",
+        "Price": "16,42",
         "Writer": "Carol Mitchell"
       }
     ],
-    "AlbumPrice": "25.41"
+    "AlbumPrice": "25,41"
   },
   {
     "AlbumName": "Dark matters",
@@ -60,10 +60,10 @@
     "Songs": [
       {
         "SongName": "In the end",
-        "Price": "11.99",
+        "Price": "11,99",
         "Writer": "Verine Eschalotte"
       }
     ],
-    "AlbumPrice": "11.99"
+    "AlbumPrice": "11,99"
   }
 ]

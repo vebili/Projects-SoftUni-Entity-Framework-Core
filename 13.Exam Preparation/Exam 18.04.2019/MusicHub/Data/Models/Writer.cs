@@ -5,15 +5,21 @@
 
     public class Writer
     {
+        public Writer()
+        {
+            this.Songs = new HashSet<Song>();
+        }
+
         [Key]
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(20), MinLength(3)]
+        [MinLength(3), MaxLength(20)]
         public string Name { get; set; }
 
-        [RegularExpression("[A-Z][a-z]+ [A-Z][a-z]+")]
+        [RegularExpression(@"^[A-Z]{1}[a-z]+[ ][A-Z]{1}[a-z]+$")]
         public string Pseudonym { get; set; }
-        public ICollection<Song> Songs { get; set; } = new HashSet<Song>();
+
+        public virtual ICollection<Song> Songs { get; set; }
     }
 }
