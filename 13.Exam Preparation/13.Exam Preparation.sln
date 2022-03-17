@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema", "Exam 07.04.2019\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeisterMask", "Exam 07.12.2019\TeisterMask\TeisterMask.csproj", "{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicHub", "Exam 18.04.2019\MusicHub\MusicHub.csproj", "{979DD33B-1AAA-4E0A-ABCB-3D77797CAD23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA5A8A4F-9FAE-496A-A76E-783B6B5F43FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979DD33B-1AAA-4E0A-ABCB-3D77797CAD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979DD33B-1AAA-4E0A-ABCB-3D77797CAD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979DD33B-1AAA-4E0A-ABCB-3D77797CAD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979DD33B-1AAA-4E0A-ABCB-3D77797CAD23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
