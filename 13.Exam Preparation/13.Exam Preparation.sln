@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicHub", "Exam 18.04.2019
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop", "Exam 13.12.2019\BookShop\BookShop.csproj", "{36EC0317-8058-402E-B286-70883006A324}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftJail", "Exam 14 August 2020\SoftJail\SoftJail.csproj", "{4F9C2102-8A72-455E-B1D2-286C3019C4A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{36EC0317-8058-402E-B286-70883006A324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36EC0317-8058-402E-B286-70883006A324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36EC0317-8058-402E-B286-70883006A324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9C2102-8A72-455E-B1D2-286C3019C4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9C2102-8A72-455E-B1D2-286C3019C4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9C2102-8A72-455E-B1D2-286C3019C4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9C2102-8A72-455E-B1D2-286C3019C4A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
