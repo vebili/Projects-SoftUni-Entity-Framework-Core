@@ -8,7 +8,7 @@
     {
         static void Main(string[] args)
         {
-            var connectionString = @"Server=.;Database=MiniORM;Integrated Security=True";
+            var connectionString = @"Server=.;Database=MiniORM;Trusted_Connection=True";
 
             var context = new SoftUniDbContext(connectionString);
 

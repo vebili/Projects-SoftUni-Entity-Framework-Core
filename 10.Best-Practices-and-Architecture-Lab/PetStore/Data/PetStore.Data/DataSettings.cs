@@ -3,6 +3,6 @@
   public  class DataSettings
   {
       public const string Connection =
-          @"Server=ALEKSANDRA\SQLEXPRESS;Database=PetStoreCatalog;Integrated Security= true;";
+          @"Server=.;Database=PetStoreCatalog;Trusted_Connection= true;";
   }
 }

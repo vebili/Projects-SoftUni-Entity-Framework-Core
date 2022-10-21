@@ -2,6 +2,6 @@
 {
     public class DataSettings
     {
-        public const string Connection = @"Server=NASKO-PC\SQLEXPRESS;Database=PetStoreCatalog;Trusted_Connection=True;";
+        public const string Connection = @"Server=.;Database=PetStoreCatalog;Trusted_Connection=True;";
     }
 }
