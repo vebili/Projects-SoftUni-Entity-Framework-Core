@@ -5,7 +5,7 @@ using static PetStore.Data.Models.DataValidation;
 
 namespace PetStore.Data.Models
 {
-   public class Breed
+    public class Breed
     {
         public int Id { get; set; }
 

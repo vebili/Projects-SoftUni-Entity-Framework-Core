@@ -1,9 +1,8 @@
-﻿using System;
-using System.Linq;
-
-using PetStore.Data;
+﻿using PetStore.Data;
 using PetStore.Data.Models;
 using PetStore.Services.Models.Food;
+using System;
+using System.Linq;
 
 namespace PetStore.Services.Implementations
 {

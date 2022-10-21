@@ -1,7 +1,7 @@
 ﻿namespace PetStore.Services
 {
-   public interface IOrderService
-   {
-       void CompleteOrder(int orderId);
-   }
+    public interface IOrderService
+    {
+        void CompleteOrder(int orderId);
+    }
 }

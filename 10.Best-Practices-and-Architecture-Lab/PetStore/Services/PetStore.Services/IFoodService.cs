@@ -1,6 +1,5 @@
-﻿using System;
-
-using PetStore.Services.Models.Food;
+﻿using PetStore.Services.Models.Food;
+using System;
 
 namespace PetStore.Services
 {

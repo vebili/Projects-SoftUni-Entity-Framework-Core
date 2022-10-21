@@ -1,7 +1,6 @@
-﻿using System.Linq;
-
-using PetStore.Data;
+﻿using PetStore.Data;
 using PetStore.Data.Models;
+using System.Linq;
 
 namespace PetStore.Services.Implementations
 {

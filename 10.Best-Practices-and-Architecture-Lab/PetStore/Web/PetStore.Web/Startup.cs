@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,13 +23,13 @@ namespace PetStore.Web
         {
             services.AddDbContext<PetStoreDbContext>();
             services.AddTransient<IPetService, PetService>();
-            //services.AddTransient<IBreedService, BreedService>();
-            ////services.AddTransient<IBrandService, BrandService>();
-            //services.AddTransient<ICategoryService, CategoryService>();
-            //services.AddTransient<IUserService, UserService>();
-            //services.AddTransient<IFoodService, FoodService>();
-            //services.AddTransient<IOrderService, OrderService>();
-            //services.AddTransient<IToyService, ToyService>();
+            services.AddTransient<IBreedService, BreedService>();
+            services.AddTransient<IBrandService, BrandService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IFoodService, FoodService>();
+            services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IToyService, ToyService>();
             services.AddControllersWithViews();
         }
 

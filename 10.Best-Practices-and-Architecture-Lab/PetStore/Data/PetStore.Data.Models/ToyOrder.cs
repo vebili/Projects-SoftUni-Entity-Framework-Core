@@ -1,6 +1,6 @@
 ﻿namespace PetStore.Data.Models
 {
-   public class ToyOrder
+    public class ToyOrder
     {
         public int ToyId { get; set; }
         public virtual Toy Toy { get; set; }

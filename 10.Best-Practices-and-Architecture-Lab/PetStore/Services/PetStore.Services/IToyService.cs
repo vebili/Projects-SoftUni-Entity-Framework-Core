@@ -2,15 +2,15 @@
 
 namespace PetStore.Services
 {
-   public interface IToyService
-   {
-       void BuyToyFromDistributor(string name, string description , decimal price, decimal profit, int brandId,
-           int categoryId);
+    public interface IToyService
+    {
+        void BuyToyFromDistributor(string name, string description, decimal price, decimal profit, int brandId,
+            int categoryId);
 
-       void BuyToyFromDistributor(AddingToyServiceModel model);
+        void BuyToyFromDistributor(AddingToyServiceModel model);
 
-       void SellToyToUser(int toyId, int userId);
+        void SellToyToUser(int toyId, int userId);
 
-       bool Exists(int toyId);
-   }
+        bool Exists(int toyId);
+    }
 }

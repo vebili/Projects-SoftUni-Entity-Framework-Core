@@ -5,11 +5,11 @@ using PetStore.Data.Models;
 
 namespace PetStore.Data.Configuration
 {
-   public class FoodOrderConfiguration:IEntityTypeConfiguration<FoodOrder>
+    public class FoodOrderConfiguration : IEntityTypeConfiguration<FoodOrder>
     {
         public void Configure(EntityTypeBuilder<FoodOrder> foodOrder)
         {
-            foodOrder.HasKey(fo => new {fo.FoodId, fo.OrderId});
+            foodOrder.HasKey(fo => new { fo.FoodId, fo.OrderId });
 
             foodOrder.HasOne(fo => fo.Order)
                 .WithMany(o => o.Foods)

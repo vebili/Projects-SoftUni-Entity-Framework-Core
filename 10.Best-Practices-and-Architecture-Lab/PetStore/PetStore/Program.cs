@@ -1,9 +1,8 @@
-﻿using System;
-using System.Linq;
-
-using PetStore.Data;
+﻿using PetStore.Data;
 using PetStore.Data.Models;
 using PetStore.Services.Implementations;
+using System;
+using System.Linq;
 
 namespace PetStore
 {
@@ -40,7 +39,7 @@ namespace PetStore
             //petService.SellPet(1,1);
 
             //SeedDatabaseWithPetsCtagoriesAndBreeds(data);
-          
+
 
         }
 
@@ -87,7 +86,7 @@ namespace PetStore
                 {
                     DateOfBirth = DateTime.Now.AddDays(-60 + i),
                     Price = 50 + i,
-                    Gender = (Gender) (i % 2),
+                    Gender = (Gender)(i % 2),
                     Description = "Some random petDescription",
                     CategoryId = categoryId,
                     BreedId = breedId

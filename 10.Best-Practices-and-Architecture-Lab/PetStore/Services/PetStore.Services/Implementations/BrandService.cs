@@ -1,11 +1,10 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-
-using PetStore.Data;
+﻿using PetStore.Data;
 using PetStore.Data.Models;
-using PetStore.Services.Models.Toy;
 using PetStore.Services.Models.Brand;
+using PetStore.Services.Models.Toy;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PetStore.Services.Implementations
 {
@@ -27,7 +26,7 @@ namespace PetStore.Services.Implementations
                 throw new InvalidOperationException($"Brand name cannot be more than {DataValidation.NameMaxLength} characters!");
             }
 
-            if (this.data.Brands.Any(b=>b.Name.ToLower()==name.ToLower()))
+            if (this.data.Brands.Any(b => b.Name.ToLower() == name.ToLower()))
             {
                 throw new InvalidOperationException($"Brand name already exists!");
             }
@@ -59,16 +58,16 @@ namespace PetStore.Services.Implementations
                 {
                     Name = b.Name,
                     Toys = b.Toys.Select(t => new ToyListingServiceModel()
-                        {
-                            Id = t.Id,
-                            Name = t.Name,
-                            Price = t.Price,
-                            TotalOrders = t.Orders.Count
-                        })
+                    {
+                        Id = t.Id,
+                        Name = t.Name,
+                        Price = t.Price,
+                        TotalOrders = t.Orders.Count
+                    })
                         .ToList()
                 })
                 .FirstOrDefault();
 
-      
+
     }
 }

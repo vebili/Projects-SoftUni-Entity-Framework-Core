@@ -1,5 +1,3 @@
-using System;
-
 namespace PetStore.Web.Models
 {
     public class ErrorViewModel

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PetStore.Data.Models
 {
-   public class Order
+    public class Order
     {
         public int Id { get; set; }
         public DateTime PurchaseDate { get; set; }

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-
-using PetStore.Data.Models;
+﻿using PetStore.Data.Models;
 using PetStore.Services.Models.Pet;
+using System;
+using System.Collections.Generic;
 
 namespace PetStore.Services
 {

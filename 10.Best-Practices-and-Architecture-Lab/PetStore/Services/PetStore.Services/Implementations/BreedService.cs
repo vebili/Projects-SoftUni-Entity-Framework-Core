@@ -1,21 +1,20 @@
-﻿using System;
-using System.Linq;
-
-using PetStore.Data;
+﻿using PetStore.Data;
 using PetStore.Data.Models;
+using System;
+using System.Linq;
 
 namespace PetStore.Services.Implementations
 {
-   public class BreedService:IBreedService
-   {
-       private readonly PetStoreDbContext data;
+    public class BreedService : IBreedService
+    {
+        private readonly PetStoreDbContext data;
 
-       public BreedService(PetStoreDbContext data)
-       {
-           this.data = data;
-       }
+        public BreedService(PetStoreDbContext data)
+        {
+            this.data = data;
+        }
 
-       public void Add(string name)
+        public void Add(string name)
         {
             if (String.IsNullOrWhiteSpace(name))
             {
@@ -37,10 +36,10 @@ namespace PetStore.Services.Implementations
 
         }
 
-       public bool Exists(string name)
-           => this.data.Breeds.Any(x => x.Name.ToLower() == name.ToLower().Trim());
+        public bool Exists(string name)
+            => this.data.Breeds.Any(x => x.Name.ToLower() == name.ToLower().Trim());
 
-       public bool Exists(int breedId)
-           => this.data.Breeds.Any(x => x.Id == breedId);
-   }
+        public bool Exists(int breedId)
+            => this.data.Breeds.Any(x => x.Id == breedId);
+    }
 }

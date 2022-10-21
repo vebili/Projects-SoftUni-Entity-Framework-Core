@@ -5,7 +5,7 @@ using PetStore.Data.Models;
 
 namespace PetStore.Data.Configuration
 {
-   public class ToyConfiguration:IEntityTypeConfiguration<Toy>
+    public class ToyConfiguration : IEntityTypeConfiguration<Toy>
     {
         public void Configure(EntityTypeBuilder<Toy> toy)
         {

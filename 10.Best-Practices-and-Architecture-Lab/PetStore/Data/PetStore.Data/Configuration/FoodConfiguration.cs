@@ -5,7 +5,7 @@ using PetStore.Data.Models;
 
 namespace PetStore.Data.Configuration
 {
-   public class FoodConfiguration:IEntityTypeConfiguration<Food>
+    public class FoodConfiguration : IEntityTypeConfiguration<Food>
     {
         public void Configure(EntityTypeBuilder<Food> food)
         {
